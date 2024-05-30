@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-bandhu</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right, black, #03132c, #01204e);
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      h1 {
+        font-size: 20vmin;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 3px #feae6f;
+      }
+      h1::before {
+        content: "TicTacToe";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        color: #ee8432;
+        border-right: rpx solid rgb(245, 245, 245);
+        transition: 5s ease-in-out;
+      }
+      h1:hover::before {
+        width: 100%;
+        filter: drop-shadow(0 0 25 red);
+      }
+      a {
+        text-decoration: none;
+        padding: 2vmin;
+        font-size: 3vmin;
+        background-color: #feae6f;
+        color: #01204e;
+        border-radius: 30px;
+        margin-top: 1rem;
+        box-shadow: 0 0 0.5rem #f6dcac;
+        border: none;
+        transition: 0.5s ease-in;
+      }
+      a:hover {
+        background-color: #f17313;
+        box-shadow: 0 0 1rem #f6dcac;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TicTacToe</h1>
+    <a href="./tic-tac-toe.html">Start Game</a>
+  </body>
+</html>
